@@ -1,0 +1,39 @@
+﻿.overlay {
+  @apply fixed inset-0 w-[100vw] h-[100vh] bg-gray-700/50;
+}
+
+.canvas {
+  @apply flex items-center justify-center w-full h-full px-5;
+}
+
+.behind_f {
+  @apply w-[500px] h-[500px] bg-white rounded-2xl overflow-y-hidden text-stone-700;
+}
+
+.container {
+  @apply w-full h-full overflow-y-scroll p-3;
+  &::-webkit-scrollbar {
+    @apply w-[14px] bg-[#424242];
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-[#686868] hover:bg-[#7B7B7B];
+  }
+  
+}
+
+.image {
+  @apply w-full h-auto object-contain
+}
+
+.txt {
+  @apply mt-5;
+}
+
+.btn_frame {
+  @apply w-full flex justify-center my-4;
+}
+
+.btn {
+  @apply border bg-[#424242] py-2 px-5 rounded-2xl text-white hover:bg-[#686868] select-none;
+}

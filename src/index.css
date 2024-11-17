@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /*Fonts*/
+    --primary-family: "IBM Plex Mono", sans-serif;
+    --second-family: "Raleway", sans-serif;
+    /*Background color*/
+    --primary-background: #1B1B1B;
+    --secondary-background: #080808;
+    /*Text color*/
+    --primary-color: #9c9c9c;
+    /*Others*/
+    --rbc: #0f0;
+
+    font-family: var(--primary-family);
+    color-scheme: light dark;
+    color: var(--primary-color);
+    background: var(--secondary-background);
+
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

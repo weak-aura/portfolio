@@ -1,0 +1,47 @@
+﻿.canvas {
+  @apply lg:px-8 px-5 mt-[150px]
+  sm:mt-[200px];
+}
+
+.primary_frame {
+  @apply flex flex-col items-center justify-between m-auto max-w-[940px]
+  sm:flex-row; 
+}
+
+.author {
+  @apply max-w-[550px] order-2 flex flex-col items-center
+  sm:order-1 sm:items-baseline;
+
+  h1 {
+    @apply font-extrabold  text-2xl text-white mb-5
+    sm:text-4xl sm:text-left;
+  }
+
+  p {
+    @apply mb-10;
+  }
+}
+
+.image {
+  @apply w-[200px] h-[200px] order-1 relative overflow-hidden rounded-full
+  sm:min-w-[350px] sm:min-h-[350px] sm:order-2;
+
+  img {
+    @apply absolute left-0 top-[-110px]
+    sm:top-[-194px];
+  }
+}
+
+.btn {
+  border: 1px solid #62ba1b;
+  border-radius: 4px;
+  padding: 21px 64px;
+  height: 63px;
+  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+  background: #3f8e00;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+}

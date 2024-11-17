@@ -1,0 +1,18 @@
+.main_frame {
+  @apply w-full mb-1 rounded-md overflow-hidden;
+}
+
+.title {
+  @apply flex justify-between px-4 py-1 text-[--primary-color] cursor-pointer bg-[--primary-background] select-none;
+}
+
+.description {
+  @apply bg-blue-50 max-h-0 overflow-hidden transition-all duration-500 text-[--primary-color];
+  p{
+    @apply p-2;
+  }
+}
+
+.animate {
+  @apply h-auto max-h-[999px] transition-all duration-500;
+}

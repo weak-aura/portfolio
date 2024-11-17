@@ -1,0 +1,52 @@
+﻿.canvas {
+  @apply px-5 mx-auto mt-[200px] max-w-[500px] relative
+  sm:mt-[200px];
+}
+
+.grid_f{
+  @apply grid;
+}
+
+.switch_f {
+  @apply flex gap-2;
+}
+
+.switch {
+  @apply border-x-2 border-t-2 border-transparent px-2;
+}
+
+.selection_border {
+  @apply border-x-2 border-[--primary-background] rounded-t-md relative text-white;
+}
+
+/*--Rigid body--*/
+.rigid_body_x::before {
+  @apply content-[""] absolute bottom-[-2px] left-[-10px] w-[10px] h-[10px] bg-transparent 
+  rounded-br-md border-b-2 border-r-2 border-[--primary-background];
+  box-shadow: 2px 2px 0 0.5px var(--secondary-background);
+}
+
+.rigid_body_x::after {
+  @apply content-[""] absolute bottom-[-2px] right-[-10px] w-[10px] h-[10px] bg-transparent
+  rounded-bl-md border-b-2 border-l-2 border-[--primary-background];
+  box-shadow: -2px 2px 0 0.5px var(--secondary-background);
+}
+
+.rigid_body_r::after {
+  @apply content-[""] absolute bottom-[-2px] right-[-10px] w-[10px] h-[10px] bg-transparent
+  rounded-bl-md border-b-2 border-l-2 border-[--primary-background];
+  box-shadow: -2px 2px 0 0.5px var(--secondary-background);
+}
+/*-----------------------------------------------*/
+.border_b_hidden::before {
+  @apply content-[""] absolute bottom-[-2px] left-0 w-full h-0.5 bg-[--secondary-background];
+}
+
+.init_banner_f {
+  @apply h-full border-[--primary-background] border-2 rounded-tr-md rounded-b-md;
+}
+
+.rounded_tl {
+  @apply rounded-tl-md overflow-hidden;
+}
+

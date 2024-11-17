@@ -1,0 +1,52 @@
+﻿.hamburger_button {
+  @apply w-10 h-10 border rounded-xl relative overflow-hidden border-[#9c9c9c];
+
+  span {
+    @apply w-8 h-[3px] bg-[#9c9c9c] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-full;
+  }
+
+  span:nth-child(1),span:nth-child(2),span:nth-child(3),span:nth-child(4) {
+    transition:  0.2s ease;
+  }
+
+  span:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+
+
+  span:nth-child(4) {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
+
+  // animate on open
+  span:nth-child(1).open {
+    transform: translate(-50%, -1500%);
+  }
+
+  span:nth-child(2).open {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  span:nth-child(3).open {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  span:nth-child(4).open {
+    transform: translate(-50%, 1500%);
+  }
+
+  &:hover {
+    span:nth-child(1),span:nth-child(2),span:nth-child(3),span:nth-child(4) {
+      @apply bg-white;
+    }
+
+    span:nth-child(1) {
+      @apply w-5;
+    }
+
+    span:nth-child(4) {
+      @apply w-5;
+    }
+  }
+}
+

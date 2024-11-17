@@ -1,0 +1,47 @@
+﻿.overlay {
+  @apply fixed inset-0 w-[100vw] h-[100vh];
+}
+
+.frame {
+  @apply bg-[#1b1b1b] h-[70px] rounded-b-[8px] transition-[height] duration-300 px-5 overflow-hidden
+  relative mx-5;
+  
+  a{
+    @apply cursor-default;
+  }
+}
+
+.auxiliary_frame {
+  @apply md:flex h-[70px] m-auto max-w-[940px];
+}
+
+.logo {
+  @apply inline-flex items-center select-none cursor-default h-full mr-12;
+}
+
+.link {
+  @apply flex items-center hover:text-white;
+}
+
+.h_animate {
+  @apply h-[300px] md:h-[70px] transition-[height] duration-300;
+}
+
+.nav {
+  @apply list-none gap-14 hidden md:flex;
+  li {
+    @apply hover:text-white select-none self-center;
+  }
+}
+
+.nav_visible {
+  @apply flex flex-col gap-8 w-full h-full
+    // after screen md:768px:
+  md:flex-row ;
+}
+
+.hamburger_button {
+  @apply absolute top-[14px] right-[20px]
+    // after screen md:768px
+  md:hidden;
+}
