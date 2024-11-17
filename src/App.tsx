@@ -21,12 +21,12 @@ function App() {
     }}>
         <MyContextProvider>
           <Routes>
-            <Route path={"/portfolio/"} element={<Layout/>}>
+            <Route path={"/"} element={<Layout/>}>
               <Route index element={<Home/>}/>
-              <Route path={"/portfolio/accordion"} element={<Accordion/>}/>
-              <Route path={"/portfolio/modal"} element={<Modal/>}/>
-              <Route path={"/portfolio/slider"} element={<Slider/>}/>
-              <Route path={"/portfolio/to-do"} element={<Todo/>}/>
+              <Route path={"/accordion"} element={<Accordion/>}/>
+              <Route path={"/modal"} element={<Modal/>}/>
+              <Route path={"/slider"} element={<Slider/>}/>
+              <Route path={"/to-do"} element={<Todo/>}/>
               <Route path={"/*"} element={<NoFound/>}/>
             </Route>
           </Routes>
