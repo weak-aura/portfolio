@@ -9,7 +9,6 @@ type PlacementOfImagesProps = {
 }
 export const PlacementOfImages: React.FC<PlacementOfImagesProps> = ({images, setSelectedElement}) => {
   
-  
   return (
     <div className={styles.canvas}>
       <div className={styles.grid_f}>

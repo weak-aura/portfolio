@@ -5,7 +5,7 @@ import {MultiSelectionAccordion} from "../../../components/MultiSelectionAccordi
 
 export const Accordion = () => {
   const selections: Array<{ name: string }> = [{name: "Multiple"}, {name: "Single"}]
-  const [isSelected, setisSelected] = React.useState<string>(selections[0].name)
+  const [isSelected, setIsSelected] = React.useState<string>(selections[0].name)
 
   return (
     <div className={styles.canvas}>
@@ -14,7 +14,7 @@ export const Accordion = () => {
           {selections.map((el) => (
             <button key={el.name}
                     className={`${styles.switch} ${isSelected === el.name ? styles.selection_border : undefined}`}
-                    onClick={() => setisSelected(el.name)}
+                    onClick={() => setIsSelected(el.name)}
             >
               <span className={isSelected === el.name && selections[0].name === el.name ? styles.rigid_body_r : undefined}/>
               <span className={isSelected === el.name && selections[1].name === el.name ? styles.rigid_body_x : undefined}/>

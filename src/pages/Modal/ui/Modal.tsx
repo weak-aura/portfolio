@@ -41,7 +41,7 @@ export const Modal = () => {
   }
   return (
     <div className={styles.canvas}>
-      {isLoading ? (<h1 className={"text-[--rbc]"}>Lodaing...</h1>) : (
+      {isLoading ? (<h1 className={"text-[--rbc]"}>Loading...</h1>) : (
         <PlacementOfImages images={images} setSelectedElement={setSelectedElement}/>)}
       <ModalPopup selectedElement={selectedElement} setSelectedElement={setSelectedElement}/>
     </div>

@@ -1,0 +1,19 @@
+.frame {
+  @apply flex gap-3 border p-4 rounded-lg bg-[#262626] border-[#333333] h-auto;
+}
+
+.unchecked {
+  @apply min-w-[20px] h-[20px] border-2 rounded-full border-[#4ea8de] cursor-pointer;
+}
+
+.checked {
+  @apply min-w-[20px] h-[20px] rounded-full bg-[#5e60ce] flex items-center justify-center text-[13.5px] cursor-pointer select-none;
+}
+
+.svg {
+  @apply w-[20px] h-[20px] cursor-pointer;
+  
+  svg{
+    fill: #5e60ce;
+  }
+}

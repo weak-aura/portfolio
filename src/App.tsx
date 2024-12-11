@@ -12,8 +12,6 @@ import {NoFound} from "./pages/NoFound/NoFound.tsx";
 
 function App() {
   
-  
-  
   return (
     <BrowserRouter future={{
       v7_relativeSplatPath: true,
