@@ -6,6 +6,7 @@ export const Home = () => {
 
   return (
     <div className={styles.canvas}>
+      <h1>test</h1>
       <div className={styles.primary_frame}>
         <div className={styles.author}>
           <h1>Bekzat Tulebayev</h1>
