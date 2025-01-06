@@ -8,10 +8,10 @@ import {useMyContext} from "../../../context/Context.tsx";
 import React from "react";
 
 const routeList: Array<{ name: string, route: string }> = [
-  {name: "Accordion", route: "accordion"},
-  {name: "Modal & Grid", route: "modal"},
-  {name: "Slider", route: "slider"},
-  {name: "To-do", route: "to-do"},
+  {name: "Accordion", route: "portfolio/accordion"},
+  {name: "Modal & Grid", route: "portfolio/modal"},
+  {name: "Slider", route: "portfolio/slider"},
+  {name: "To-do", route: "portfolio/to-do"},
 ]
 
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
 
         <div className={`${styles.auxiliary_frame}`}>
           <div className={styles.logo}>
-            <Link className={styles.link} to={"/"} onClick={() => setIsOpen(false)}>
+            <Link className={styles.link} to={"/portfolio/"} onClick={() => setIsOpen(false)}>
               <IoMdHome/>Home
             </Link>
           </div>

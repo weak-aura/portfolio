@@ -1,3 +1,4 @@
+import React from "react";
 import {Route, BrowserRouter, Routes} from "react-router-dom";
 import {Layout} from "./components/Layout";
 
@@ -12,6 +13,10 @@ import {NoFound} from "./pages/NoFound/NoFound.tsx";
 
 function App() {
   
+  React.useEffect(() => {
+    
+  },[])
+  
   return (
     <BrowserRouter future={{
       v7_relativeSplatPath: true,
@@ -20,11 +25,11 @@ function App() {
         <MyContextProvider>
           <Routes>
             <Route path={"/"} element={<Layout/>}>
-              <Route index element={<Home/>}/>
-              <Route path={"/accordion"} element={<Accordion/>}/>
-              <Route path={"/modal"} element={<Modal/>}/>
-              <Route path={"/slider"} element={<Slider/>}/>
-              <Route path={"/to-do"} element={<Todo/>}/>
+              <Route path={"/portfolio"} element={<Home/>}/>
+              <Route path={"/portfolio/accordion"} element={<Accordion/>}/>
+              <Route path={"/portfolio/modal"} element={<Modal/>}/>
+              <Route path={"/portfolio/slider"} element={<Slider/>}/>
+              <Route path={"/portfolio/to-do"} element={<Todo/>}/>
               <Route path={"/*"} element={<NoFound/>}/>
             </Route>
           </Routes>
