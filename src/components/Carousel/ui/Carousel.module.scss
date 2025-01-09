@@ -1,0 +1,20 @@
+﻿.root {
+  @apply flex items-center h-[200px];
+}
+
+.window {
+  @apply overflow-hidden w-[400px] h-[200px];
+}
+
+.container {
+  @apply w-full h-full list-none flex select-none;
+}
+
+.slide {
+  @apply flex-shrink-0 w-full h-full;
+}
+
+.arrow_icon {
+  @apply text-4xl h-full hover:bg-gray-300 active:bg-gray-200 cursor-pointer;
+}
+

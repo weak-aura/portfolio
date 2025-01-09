@@ -10,7 +10,7 @@ import React from "react";
 const routeList: Array<{ name: string, route: string }> = [
   {name: "Accordion", route: "portfolio/accordion"},
   {name: "Modal & Grid", route: "portfolio/modal"},
-  {name: "Slider", route: "portfolio/slider"},
+  {name: "Carousel", route: "portfolio/carousel"},
   {name: "To-do", route: "portfolio/to-do"},
 ]
 
