@@ -27,7 +27,7 @@ function App() {
         <MyContextProvider>
           <Routes>
             <Route path={"/"} element={<Layout/>}>
-              <Route path={"/"} element={<Home/>}/>
+              <Route index element={<Home/>}/>
               <Route path={"/accordion"} element={<Accordion/>}/>
               <Route path={"/modal"} element={<Modal/>}/>
               <Route path={"/carousel"} element={<CarouselPage/>}/>
