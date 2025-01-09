@@ -3,11 +3,11 @@
 }
 
 .window {
-  @apply overflow-hidden w-[400px] h-[200px];
+  @apply w-[400px] h-[200px] border-2 overflow-hidden;
 }
 
 .container {
-  @apply w-full h-full list-none flex select-none;
+  @apply w-full h-full list-none flex select-none transition-transform duration-300;
 }
 
 .slide {

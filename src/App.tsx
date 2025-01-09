@@ -21,16 +21,18 @@ function App() {
     <BrowserRouter future={{
       v7_relativeSplatPath: true,
       v7_startTransition: true
-    }}>
+    }}
+    basename={"/portfolio/"}
+    >
         <MyContextProvider>
           <Routes>
             <Route path={"/"} element={<Layout/>}>
-              <Route path={"/portfolio"} element={<Home/>}/>
-              <Route path={"/portfolio/accordion"} element={<Accordion/>}/>
-              <Route path={"/portfolio/modal"} element={<Modal/>}/>
-              <Route path={"/portfolio/carousel"} element={<CarouselPage/>}/>
-              <Route path={"/portfolio/to-do"} element={<Todo/>}/>
-              <Route path={"/portfolio/*"} element={<NoFound/>}/>
+              <Route path={"/"} element={<Home/>}/>
+              <Route path={"/accordion"} element={<Accordion/>}/>
+              <Route path={"/modal"} element={<Modal/>}/>
+              <Route path={"/carousel"} element={<CarouselPage/>}/>
+              <Route path={"/to-do"} element={<Todo/>}/>
+              <Route path={"/*"} element={<NoFound/>}/>
             </Route>
           </Routes>
         </MyContextProvider>
