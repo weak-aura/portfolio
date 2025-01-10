@@ -20,7 +20,7 @@ export const Carousel = () => {
     >
       {slides.map((el) => (
         <SwiperSlide key={el.id}>
-          <img className="w-[100vw] h-[100vh] object-cover" src={el.imageUrl} alt="img"/>
+          <img className="w-[100vw] h-[100vh] object-cover select-none" src={el.imageUrl} alt="img"/>
         </SwiperSlide>
       ))}
     </Swiper>
