@@ -21,7 +21,8 @@ export const ModalPopup: React.FC<ModalProps> = ({selectedElement, setSelectedEl
                       layoutId={selectedElement.download_url}
                       transition={{duration: 0.3}}>
             <div className={styles.container}
-                 onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => e.stopPropagation()}>
+                 onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => e.stopPropagation()}
+            >
               <img className={styles.image}
                    src={selectedElement.download_url !== null ? selectedElement.download_url : undefined} alt="img"/>
               <h1>Author: {selectedElement.author}</h1>
