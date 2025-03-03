@@ -10,11 +10,15 @@ export const Layout = () => {
 
   return (
     <React.Fragment>
-      <div onClick={() => setIsOpen(false)}>
-        <div className={"fixed top-0 left-[50%] translate-x-[-50%] w-full z-50"}>
-          <Header/>
+      <div onClick={() => setIsOpen(false)} className="mx-5">
+        <div className={"fixed top-0 left-[50%] translate-x-[-50%] w-screen z-50"}>
+         
+            <Header/>
+    
         </div>
-        <Outlet/>
+        <div className="mt-20 mx-auto max-w-screen-lg">
+          <Outlet/>
+        </div>
       </div>
     </React.Fragment>
   );

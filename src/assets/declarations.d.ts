@@ -1,0 +1,10 @@
+﻿declare module '*.JPG';
+declare module '*.jpg';
+declare module '*.PNG';
+declare module '*.png';
+declare module '*.JPEG';
+declare module '*.jpeg';
+declare module '*.GIF';
+declare module '*.gif';
+declare module '*.SVG';
+declare module '*.svg';

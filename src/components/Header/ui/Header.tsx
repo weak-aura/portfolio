@@ -8,32 +8,32 @@ import {useMyContext} from "../../../context/Context.tsx";
 import React from "react";
 
 const routeList: Array<{ name: string, route: string }> = [
-  {name: "Accordion", route: "accordion"},
-  {name: "Modal & Grid", route: "modal"},
-  {name: "Carousel", route: "carousel"},
-  {name: "To-do", route: "to-do"},
+  {name: "Обо мне", route: "about"},
+  {name: "Мои работы", route: "my_projects"},
 ]
 
 export const Header = () => {
   const {isOpen, setIsOpen} = useMyContext();
-  
+
   return (
-    <div className={isOpen? styles.overlay: undefined} >
+    <div className={isOpen ? styles.overlay : undefined}>
       <header className={`${styles.frame} ${isOpen ? styles.h_animate : undefined}`}
               onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => e.stopPropagation()}>
 
         <div className={`${styles.auxiliary_frame}`}>
           <div className={styles.logo}>
             <Link className={styles.link} to={"/"} onClick={() => setIsOpen(false)}>
-              <IoMdHome/>Home
+              <IoMdHome/>Главная
             </Link>
           </div>
 
           <nav className={`${styles.nav} ${isOpen && styles.nav_visible} `}>
             {routeList.map((el) => (
-              <li key={el.route}>
-                <Link to={`/${el.route}`} onClick={() => setIsOpen(false)}>{el.name}</Link>
-              </li>
+              <Link to={`/${el.route}`} onClick={() => setIsOpen(false)} key={el.route}>
+                <li >
+                  {el.name}
+                </li>
+              </Link>
             ))}
           </nav>
         </div>

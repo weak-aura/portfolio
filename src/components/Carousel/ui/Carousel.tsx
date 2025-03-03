@@ -1,26 +1,26 @@
 ﻿// import React from 'react';
-import {Navigation, Pagination} from "swiper/modules";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from "swiper/modules";
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import {slides} from "../../../assets/img.ts";
+import {SlidesTypes} from "../../../assets/img.ts";
 
+interface CarouserProps {
+  slides: SlidesTypes[]
+}
 
-export const Carousel = () => {
+export const Carousel = ({slides}: CarouserProps) => {
 
   return (
     <Swiper
       className="mySwiper"
       navigation={true}
-      pagination={{clickable: true,}}
-      modules={[Navigation, Pagination]}
+      modules={[Navigation]}
       spaceBetween={0}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
-      {slides.map((el) => (
-        <SwiperSlide key={el.id}>
-          <img className="w-[100vw] h-[100vh] object-cover select-none" src={el.imageUrl} alt="img"/>
+      {slides.map((el, i) => (
+        <SwiperSlide key={i}>
+          <img className="w-full h-full object-contain select-none" src={el.imageUrl} alt="img"/>
         </SwiperSlide>
       ))}
     </Swiper>

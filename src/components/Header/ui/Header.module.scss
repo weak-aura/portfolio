@@ -12,7 +12,7 @@
 }
 
 .auxiliary_frame {
-  @apply md:flex h-[70px] m-auto max-w-[940px];
+  @apply md:flex h-[70px] m-auto max-w-screen-lg md:items-baseline items-center;
 }
 
 .logo {
@@ -24,18 +24,18 @@
 }
 
 .h_animate {
-  @apply h-[300px] md:h-[70px] transition-[height] duration-300;
+  @apply h-[150px] md:h-[70px] transition-[height] duration-300;
 }
 
 .nav {
-  @apply list-none gap-14 hidden md:flex;
+  @apply list-none gap-12 hidden md:flex w-full;
   li {
     @apply hover:text-white select-none self-center;
   }
 }
 
 .nav_visible {
-  @apply flex flex-col gap-8 w-full h-full
+  @apply flex flex-col gap-4 md:gap-12 items-center 
     // after screen md:768px:
   md:flex-row ;
 }

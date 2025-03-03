@@ -1,12 +1,17 @@
-﻿
-interface SlidesTypes {
-  imageUrl: string,
-  id: string
+﻿import img1 from "./images/1.JPG";
+import img2 from "./images/2.JPG";
+import img3 from "./images/3.JPG";
+import img4 from "./images/4.JPG";
+import img5 from "./images/5.JPG";
+
+export interface SlidesTypes {
+  imageUrl: string
 }
 
 export const slides: SlidesTypes[] = [
-  {imageUrl: "https://cdn.pixabay.com/photo/2020/05/03/19/09/nike-5126389_960_720.jpg", id: "0"},
-  {imageUrl: "https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg", id: "1"},
-  {imageUrl: "https://cdn.pixabay.com/photo/2016/11/19/09/54/footwear-1838376_1280.jpg", id: "2"},
-  {imageUrl: "https://cdn.pixabay.com/photo/2020/05/18/09/56/shoes-5185488_960_720.jpg", id: "3"},
+  {imageUrl: img1},
+  {imageUrl: img2},
+  {imageUrl: img3},
+  {imageUrl: img4},
+  {imageUrl: img5},
 ] 

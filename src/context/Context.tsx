@@ -21,11 +21,11 @@ export const MyContextProvider: React.FC<MyContextProviderProps> = ({children}) 
   )
 }
 
-export const useMyContext = () => {
-  const context = React.useContext(MyContext)
-  
-  if(context === false) {
-    throw new Error("some Error")
+export const useMyContext = (): ContextProps => {
+  const context = React.useContext(MyContext);
+
+  if (context === false) {
+    throw new Error("useMyContext должен использоваться внутри MyContextProvider");
   }
-  return context
-}
+  return context;
+};
